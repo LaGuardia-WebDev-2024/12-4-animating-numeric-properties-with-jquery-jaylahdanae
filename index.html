@@ -19,28 +19,38 @@
       />
       <h1>Aqualine</h1>
     </div>
-
+   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
     
       // ======================== Button #1
       $("#button1").click(function () {
-       
+        $(".avatar").animate({
+      width: "400px",
+      marginLeft:"100px"
+
       });
 
       // ======================== Button #2
       $("#button2").click(function () {
-     
+        $(".avatar").animate({
+          width: "200px",
+          marginLeft:"10px"
+        });
+    
+      })
       });
 
       // ======================== Button #3
       $("#button3").click(function () {
+     $(".avatar").animate({padding: "+=100px"});
+    
     
       });
 
        // ======================== Button #3
       $("#button4").click(function () {
-    
+     $(".avatar").animate({padding: "-=100px"});
       });
     
     
